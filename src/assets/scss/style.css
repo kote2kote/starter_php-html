@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.v-color-primary {
+  color: #32b6d4; }
+
+.v-color-secondary {
+  color: #fff; }
+
+.v-color-font {
+  color: #404040; }
+
+.v-color-subtext {
+  color: #404040; }
+
+.v-bgcolor-primary {
+  background-color: #32b6d4; }
+
+.v-bgcolor-secondary {
+  background-color: #fff; }
+
+.v-bgcolor-01 {
+  background-color: #404040; }
+
+.v-color-01 {
+  color: #404040; }
+
+.v-border-color-primary {
+  border-color: #32b6d4; }
+
+.font-family-mono {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono"; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic W7", "Hiragino Sans", Meiryo, sans-serif;
+  color: #404040;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+  text-rendering: optimizeLegibility;
+  background: #fff no-repeat;
+  word-wrap: break-word;
+  font-size: 16; }
+
+a {
+  transition: all 0.3s ease;
+  color: #32b6d4;
+  text-decoration: none; }
+  a:hover {
+    color: #71cde1; }
+
+p {
+  padding-bottom: 1rem; }
+
+svg,
+img {
+  height: auto; }
+
+.cm {
+  box-sizing: border-box;
+  background: repeating-linear-gradient(45deg, rgba(245, 245, 245, 0.1), rgba(245, 245, 245, 0.1) 10px, rgba(136, 136, 136, 0.2) 0, rgba(136, 136, 136, 0.2) 20px);
+  border: solid 1px rgba(68, 68, 68, 0.2); }
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10 以降にのみ適用される */
+  .ie-block {
+    display: block; }
+  .ie-hidden {
+    display: none; } }
+
+.is-tb {
+  display: none; }
+  @media only screen and (min-width: 520px) {
+    .is-tb {
+      display: block; } }
+
+.is-maxtb {
+  display: none; }
+  @media only screen and (max-width: 519px) {
+    .is-maxtb {
+      display: block; } }
+
+.is-tbpc {
+  display: none; }
+  @media only screen and (min-width: 520px) and (max-width: 959px) {
+    .is-tbpc {
+      display: block; } }
+
+.is-pc {
+  display: none; }
+  @media only screen and (min-width: 960px) {
+    .is-pc {
+      display: block; } }
+
+.is-maxpc {
+  display: none; }
+  @media only screen and (max-width: 959px) {
+    .is-maxpc {
+      display: block; } }
+
+.is-sm {
+  display: none; }
+  @media only screen and (min-width: 640px) {
+    .is-sm {
+      display: block; } }
+
+.is-maxsm {
+  display: none; }
+  @media only screen and (max-width: 639px) {
+    .is-maxsm {
+      display: block; } }
+
+.is-smmd {
+  display: none; }
+  @media only screen and (min-width: 640px) and (max-width: 767px) {
+    .is-smmd {
+      display: block; } }
+
+.is-md {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .is-md {
+      display: block; } }
+
+.is-maxmd {
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .is-maxmd {
+      display: block; } }
+
+.is-mdlg {
+  display: none; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .is-mdlg {
+      display: block; } }
+
+.is-lg {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .is-lg {
+      display: block; } }
+
+.is-maxlg {
+  display: none; }
+  @media only screen and (max-width: 1023px) {
+    .is-maxlg {
+      display: block; } }
+
+.is-lgxl {
+  display: none; }
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .is-lgxl {
+      display: block; } }
+
+.is-xl {
+  display: none; }
+  @media only screen and (min-width: 1280px) {
+    .is-xl {
+      display: block; } }
+
+.is-maxxl {
+  display: none; }
+  @media only screen and (max-width: 1279px) {
+    .is-maxxl {
+      display: block; } }
+
+.is-xlwide {
+  display: none; }
+  @media only screen and (min-width: 1280px) and (max-width: 1535px) {
+    .is-xlwide {
+      display: block; } }
+
+.is-maxwide {
+  display: none; }
+  @media only screen and (max-width: 1535px) {
+    .is-maxwide {
+      display: block; } }
+
+.is-wide {
+  display: none; }
+  @media only screen and (min-width: 1536px) {
+    .is-wide {
+      display: block; } }
+
+.is-print {
+  display: none; }
+  @media print {
+    .is-print {
+      display: block; } }
+
+.c-object-coverIE {
+  font-family: 'object-fit: cover;';
+  /* IE対策 */ }
+
+.c-transition {
+  transition: all 0.3s ease; }
+
+.testHTML .hero-heading {
+  @apply text-4xl mb-10 text-white font-medium; }
+
+.testHTML .instructions .sub-title {
+  @apply text-gray-900 pb-2 border-b-2 border-gray-400 mb-5 text-xl font-medium; }
+  .testHTML .instructions .sub-title + p {
+    @apply mb-3; }
+
+.testHTML .instructions .code {
+  @apply block font-mono border rounded bg-gray-100 text-gray-700 px-4 py-5 leading-normal text-sm shadow; }
+  .testHTML .instructions .code.pre {
+    @apply whitespace-pre; }
+  .testHTML .instructions .code em {
+    @apply opacity-75; }
+
+.testHTML .social {
+  @apply block pt-6 text-gray-700; }
+  .testHTML .social a {
+    @apply text-blue-500 font-medium p-4; }
+    .testHTML .social a:hover {
+      @apply text-blue-700; }
