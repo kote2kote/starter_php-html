@@ -6,12 +6,13 @@
 @mixin link-colors($color) {
   color: $color;
   text-decoration: none;
+  transition: initial;
   &:hover {
     color: lighten($color, 15%);
-    // text-decoration: underline;
+    text-decoration: underline;
   }
   &:visited {
-    // color: desaturate($color, 50%);
+    color: desaturate($color, 50%);
   }
 }
 
@@ -105,13 +106,21 @@
     @media only screen and (min-width: bp(wide) + px) {
       @content;
     }
-
+    // portrait
+  } @else if $value == port {
+    @media only screen and (orientation: portrait) {
+      @content;
+    }
+    // landscape
+  } @else if $value == land {
+    @media only screen and (orientation: landscape) {
+      @content;
+    }
     // retina
   } @else if $value == retina {
     @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
       @content;
     }
-
     // print
   } @else if $value == print {
     @media print {

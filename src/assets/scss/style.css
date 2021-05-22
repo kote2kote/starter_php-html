@@ -53,9 +53,13 @@ body {
 a {
   transition: all 0.3s ease;
   color: #32b6d4;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: initial; }
   a:hover {
-    color: #71cde1; }
+    color: #71cde1;
+    text-decoration: underline; }
+  a:visited {
+    color: #708f96; }
 
 p {
   padding-bottom: 1rem; }

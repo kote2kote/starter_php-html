@@ -11,7 +11,7 @@
     <meta name="og:title" property="og:title" content="" />
     <title>index</title>
   </head>
-  <body>
+  <body class="pt-[100px]">
   <?php include_once './modules/header.php'; ?>
     <img class="w-64" src="./assets/images/test.jpg" alt="">
     <?php include_once './modules/footer.php'; ?>
